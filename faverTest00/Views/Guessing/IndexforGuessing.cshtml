@@ -1,0 +1,25 @@
+﻿@using faverTest00.Controllers
+
+@{
+    ViewBag.Title = "IndexforGuessing";
+}
+
+<h2>Guessing</h2>
+@using (Html.BeginForm("IndexforGuessing","Guessing", FormMethod.Post))
+{
+    
+    @Html.Label("The Number Till Example ")
+
+
+    <input type="number" name="guessN"id ="guessN" value="0" />
+    <button type="submit">Guess it </button>
+    
+    
+}
+
+
+<h3>@ViewBag.Message</h3>
+<h4>@ViewBag.guessCounter</h4>
+<h5>@ViewBag.Message1</h5>
+
+
